@@ -27,7 +27,10 @@ por ejemplo : numero de cedula, numero de seguro social o cuenta de mail.alter
 				INSERT INTO fabricante VALUES(7, "Gigabyte");
 				INSERT INTO fabricante VALUES(8, "Huawei");
 				INSERT INTO fabricante VALUES(9, "Xiaomi");
-
+ALTER TABLE `tienda`.`fabricante` 
+ADD COLUMN `nacionalidad` VARCHAR(100) NOT NULL AFTER `nombre`,
+CHANGE COLUMN `CODIGO` `codigo` INT UNSIGNED NOT NULL ,
+CHANGE COLUMN `NOMBRE` `nombre` VARCHAR(100) NOT NULL ;
 select * from fabricante;
 
 insert into fabricante values (1, 'prueba');

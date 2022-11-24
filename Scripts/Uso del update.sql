@@ -2,5 +2,5 @@
 select * from fabricante;
 
 update fabricante
-	set nombre = 'Lenovo'
-where codigo = 2;
+	set NOMBRE = 'Egg'
+where codigo = 10;
